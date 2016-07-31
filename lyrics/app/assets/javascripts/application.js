@@ -14,3 +14,27 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function getLyrics(){
+
+  $.get('/lyrics').done(function(data){
+    console.log(data)
+    renderLyrics(data)
+  })
+}
+
+function renderLyrics(data){
+    $('#lyrics').empty();
+    let $div = $('<div class="search_results">')
+    let $image = $('<img class="poster">').attr('src', data.GetLyricResult.LyricCovertArtUrl)
+    let $artist = $('<p>').html("<span class='bold'>Artist</span>: " + data.GetLyricResult.LyricArtist)
+    let $song = $('<p>').html("<span class='bold'>Song Title</span>: " + data.GetLyricResult.LyricSong)
+    let $lyrics = $('<a target="_blank">').attr("href", data.GetLyricResult.LyricUrl).text("Get Lyrics Here")
+
+    $div.append($image, $artist, $song,$lyrics)
+    $('#lyrics').append($div)
+}
+
+$(document).ready(function() {
+  $('.search_lyrics').click(getLyrics)
+});

@@ -1,3 +1,25 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+p {
+  margin: 4px 0px;
+}
+
+img.poster {
+  border: 2px solid black;
+}
+
+.search_results{
+  text-align: center;
+}
+
