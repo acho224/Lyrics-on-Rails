@@ -15,13 +15,55 @@
 //= require turbolinks
 //= require_tree .
 
-function getLyrics(){
 
-  $.get('/lyrics').done(function(data){
-    console.log(data)
-    renderLyrics(data)
-  })
-}
+
+// function sendParams(q){
+//     console.log(q)
+//   $.ajax({
+//     url: '/lyrics',
+//     type: 'get',
+//     data: {
+//       artist: 'artist',
+//       song: 'song'
+//     },
+//     contentType: 'json'
+//   });
+// }
+
+// sendParams("<%= params[:artist],params[:song].to_json.html_safe %>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getLyrics(){
+
+//   $.get('/lyrics').done(function(data){
+//     console.log(data)
+//     renderLyrics(data)
+//   })
+// }
 
 function renderLyrics(data){
     $('#lyrics').empty();
@@ -36,5 +78,8 @@ function renderLyrics(data){
 }
 
 $(document).ready(function() {
-  $('.search_lyrics').click(getLyrics)
+  // $('.search_lyrics').submit(function(){
+  //   // getLyrics()
+  //   return false
+  // })
 });

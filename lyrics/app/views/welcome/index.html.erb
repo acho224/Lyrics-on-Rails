@@ -1,28 +1,24 @@
 <h1>Lyrics on Rails</h1>
 
-<p> Search lyrics for a song</p>
+<p>Can't remember the lyrics to a song? Search here!</p>
 <br>
 <!-- <input  type="text" placeholder="Artist">
 <input  type="text" placeholder="Song Title">
 <button id="search_lyrics">submit</button> -->
+<div id="form_container">
+  <%= form_tag("/lyrics", method:"get", remote:true) do %>
+  <%#= form_tag("/", remote:true) do %>
+    <%= label_tag(:artist, "Artist:") %>
+    <%= text_field_tag(:artist) %>
+    <%= label_tag(:song, "Song Title:") %>
+    <%= text_field_tag(:song) %>
 
-<%= form_tag("/lyrics", method:"get") do %>
-  <%= label_tag(:artist, "Artist:") %>
-  <%= text_field_tag(:artist) %>
-  <%= label_tag(:song, "Song Title:") %>
-  <%= text_field_tag(:song) %>
+    <%= button_tag "Search", :class =>"search_lyrics"%>
+  <% end %>
+</div>
 
-  <%= button_tag "Search", :class =>"search_lyrics"%>
-<% end %>
-
-
-<br>
-<br>
-<br>
 <div id="lyrics">
 
 </div>
-
-
 
 

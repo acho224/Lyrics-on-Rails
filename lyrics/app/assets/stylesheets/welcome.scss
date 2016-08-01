@@ -10,16 +10,23 @@ body{
 .bold{
   font-weight: bold;
 }
-
+button{
+  border: 0;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+button:focus{
+  outline: 0;
+}
 p {
   margin: 4px 0px;
 }
-
 img.poster {
   border: 2px solid black;
 }
-
+#lyrics{
+  margin: 20px auto;
+}
 .search_results{
   text-align: center;
 }
-
