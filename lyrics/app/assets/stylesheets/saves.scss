@@ -1,0 +1,45 @@
+// Place all the styles related to the Saves controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0 auto;
+}
+
+#artist{
+  color: #A9A9A9;
+}
+h2 {
+padding: 30px 30px;
+text-align: center;
+}
+
+#back{
+  float: right;
+  padding-right: 100px;
+}
+
+
+ul{
+  padding-left: 0px;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+
+#saved_container {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#btn_delete {
+  border: 1;
+  padding: 6px 35px;
+  margin-bottom: 40px;
+}

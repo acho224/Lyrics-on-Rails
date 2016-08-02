@@ -1,5 +1,12 @@
 <div id="search_result">
-<button id="btn_save">Save Lyrics</button>
+<form action="/save/<%=@lyrics_url%>" method="POST">
+  <input type="submit" id="btn_save" value="Save Lyrics">
+</form>
+
+
+
+
+<br>
   <div id="result_cover">
     <img src="<%= @lyric_request['LyricCovertArtUrl'].html_safe %>">
     <!-- htmlsafe resource: http://stackoverflow.com/questions/29156542/httparty-displaying-html -->

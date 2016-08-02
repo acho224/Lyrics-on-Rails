@@ -1,2 +1,3 @@
 class Lyric < ApplicationRecord
+
 end

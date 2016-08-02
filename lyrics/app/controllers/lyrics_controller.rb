@@ -14,8 +14,14 @@ class LyricsController < ApplicationController
 
     # set data to ruby variable
     @lyric_request = parsed_body['GetLyricResult'];
-    # @result_lyrics = @lyric_request['Lyric'];
 
+    artist = CGI.escape(@lyric_request['LyricArtist'])
+    song = CGI.escape(@lyric_request['LyricSong'])
+    lyics = CGI.escape(@lyric_request['Lyric'])
+
+    @lyrics_url = "#{artist}/#{song}/#{lyics}"
+    # @result_lyrics = @lyric_request['Lyric'];
+    # byebug
     # in order to use js file for ajax request (index.js.erb file to match the def index  method)
     respond_to do |format|
       format.js
