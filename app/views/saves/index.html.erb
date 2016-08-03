@@ -1,0 +1,18 @@
+<h2>My Saved Songs</h2>
+
+<div id="back">
+<%= link_to "Go Back", :controller => :welcome , :action => :index %>
+</div>
+
+<div id="saved_container">
+  <% @lyrics.each do |song| %>
+    <ul>
+      <li id="artist"><%= CGI.unescape(song.artist) %></li>
+      <li><span class="bold"><%= CGI.unescape(song.title) %></span></li>
+      <li><%= CGI.unescape(song.lyrics) %></li>
+    </ul>
+    <form action="/save/<%=@lyrics_url%>" method="DELETE">
+      <input type="submit" id="btn_delete" value="Delete">
+    </form>
+  <% end %>
+</div>

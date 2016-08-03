@@ -1,0 +1,23 @@
+<div id="search_result">
+<form action="/save/<%=@lyrics_url%>" method="POST">
+  <input type="submit" id="btn_save" value="Save Lyrics">
+</form>
+
+
+
+
+<br>
+  <div id="result_cover">
+    <img src="<%= @lyric_request['LyricCovertArtUrl'].html_safe %>">
+    <!-- htmlsafe resource: http://stackoverflow.com/questions/29156542/httparty-displaying-html -->
+  </div>
+  <div id="result_header">
+    <h2><%= @lyric_request["LyricArtist"] %></h2>
+    <h3><%= @lyric_request["LyricSong"] %></h3>
+  </div>
+  <div id="result_lyrics">
+    <%= simple_format(@lyric_request["Lyric"]) %>
+    <!-- simple_format ruby method: adds line break <br/> after each new line \n -->
+    <!-- resource: http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html#method-i-simple_format  -->
+  </div>
+</div>

@@ -1,0 +1,42 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1{
+  padding: 30px 10px;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+p {
+  color: #696969;
+}
+button{
+  border: 0;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+button:focus{
+  outline: 0;
+}
+p {
+  margin: 4px 0px;
+}
+img.poster {
+  border: 2px solid black;
+}
+#lyrics{
+  margin: 20px auto;
+}
+.search_results{
+  text-align: center;
+}
+#saved_songs{
+  padding: 15px;
+}
+
