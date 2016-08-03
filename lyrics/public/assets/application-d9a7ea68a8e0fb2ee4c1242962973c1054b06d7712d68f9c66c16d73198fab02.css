@@ -1,0 +1,126 @@
+/* line 4, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+* {
+  margin: 0 auto;
+}
+
+/* line 8, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+#artist {
+  color: #A9A9A9;
+}
+
+/* line 11, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+h2 {
+  padding: 30px 30px;
+  text-align: center;
+}
+
+/* line 16, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+#back {
+  float: right;
+  padding-right: 100px;
+}
+
+/* line 22, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+ul {
+  padding-left: 0px;
+}
+
+/* line 26, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+li {
+  list-style-type: none;
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 31, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 35, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+#saved_container {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 41, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/saves.scss */
+#btn_delete {
+  border: 1;
+  padding: 6px 35px;
+  margin-bottom: 40px;
+}
+/* line 4, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+h1 {
+  padding: 30px 10px;
+}
+
+/* line 7, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* line 12, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 16, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+p {
+  color: #696969;
+}
+
+/* line 19, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+button {
+  border: 0;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+/* line 24, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 27, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+p {
+  margin: 4px 0px;
+}
+
+/* line 30, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+img.poster {
+  border: 2px solid black;
+}
+
+/* line 33, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+#lyrics {
+  margin: 20px auto;
+}
+
+/* line 36, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+.search_results {
+  text-align: center;
+}
+
+/* line 39, /Users/Arlen/code/wdi/Lyrics-on-Rails/lyrics/app/assets/stylesheets/welcome.scss */
+#saved_songs {
+  padding: 15px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
